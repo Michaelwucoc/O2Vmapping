@@ -1,0 +1,6 @@
+[submodule "Dependence/segment-anything"]
+	path = Dependence/segment-anything
+	url = https://github.com/facebookresearch/segment-anything.git
+[submodule "Dependence/MobileSAM"]
+	path = Dependence/MobileSAM
+	url = https://github.com/ChaoningZhang/MobileSAM.git
