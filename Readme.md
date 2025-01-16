@@ -31,7 +31,7 @@ conda activate O2V
 
 ### Step 2. Setup dependence
 
-Our project relies on [SAM](https://github.com/facebookresearch/segment-anything) and [CLIP](https://github.com/openai/CLIP). Please ensure that both modules are functioning properly before running the code. For specific configuration procedures, please refer to the official repositories of [SAM]((https://github.com/facebookresearch/segment-anything)) and [CLIP](https://github.com/openai/CLIP). Additionally, we highly recommend using [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), as it significantly enhances the runtime efficiency of the code.
+Our project relies on [SAM](https://github.com/facebookresearch/segment-anything) and [CLIP](https://github.com/openai/CLIP). Please ensure that both modules are functioning properly before running the code. For specific configuration procedures, please refer to the official repositories of [SAM](https://github.com/facebookresearch/segment-anything) and [CLIP](https://github.com/openai/CLIP). Additionally, we highly recommend using [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), as it significantly enhances the runtime efficiency of the code.
 
 
 
