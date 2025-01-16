@@ -19,7 +19,7 @@ Source code for [ECCV2024] O2V-Mapping: Online Open-Vocabulary Mapping with Neur
 
 
 ## ⚙️Installation
-### Step 1. Setup Enviroment
+### Step 1. Setup Environment
 
 ```cmd
 git clone --recursive https://github.com/Fudan-MAGIC-Lab/O2Vmapping.git
@@ -33,7 +33,7 @@ conda activate O2V
 
 ### Step 2. Setup dependence
 
-
+Our project relies on [SAM](https://github.com/facebookresearch/segment-anything) and [CLIP](https://github.com/openai/CLIP). Please ensure that both modules are functioning properly before running the code. For specific configuration procedures, please refer to the official repositories of [SAM]((https://github.com/facebookresearch/segment-anything)) and [CLIP](https://github.com/openai/CLIP). Additionally, we highly recommend using [MobileSAM](https://github.com/ChaoningZhang/MobileSAM), as it significantly enhances the runtime efficiency of the code.
 
 
 
