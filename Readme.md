@@ -11,9 +11,7 @@ Source code for [ECCV2024] O2V-Mapping: Online Open-Vocabulary Mapping with Neur
 
 
 
-<video width="560" height="315" controls>
-  <source src="./semantic_search.mp4" type="video/mp4">
-</video>
+[Demo for O2Vmapping](https://github.com/Fudan-MAGIC-Lab/O2Vmapping/blob/main/semantic_search.mp4)
 
 
 
