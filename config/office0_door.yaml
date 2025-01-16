@@ -1,0 +1,116 @@
+dataset : "ReplicaClip"
+
+occupancy : True
+
+cam :
+  png_depth_scale : 6553.5
+  H: 680
+  W: 1200
+  fx: 600.0
+  fy: 600.0
+  cx: 599.5
+  cy: 339.5
+
+
+semantic : 
+  is_semantic : False
+
+scale : 1
+
+data : 
+  input_folder : './Datasets/Replica/office0'
+  output_folder : './output/Replica/office0'
+  dim : 3
+
+
+grid_len: 
+  coarse: 2
+  middle: 0.32
+  fine: 0.16
+  color: 0.16
+  semantic : 0.08
+  bound_divisible : 0.32
+
+model:
+  c_dim: 32
+  pos_embedding_method: fourier
+
+pretrained_decoders:
+  coarse: pretrained/coarse.pt
+  middle_fine: pretrained/middle_fine.pt # one ckpt contain both middle and fine
+
+
+rendering:
+  lindisp: False
+  perturb: 0.0
+  N_samples: 8
+  N_surface: 16
+  N_importance: 0
+  device: 'cuda:2'
+
+mapping :
+  device : 'cuda:2'
+  BA_cam_lr : 0.01
+  ckpt_freq : 500
+  pixels : 1000
+  iters : 300
+  every_frame : 5
+  keyframe_every: 50
+  fine_iter_ratio : 0.5
+  middle_iter_ratio : 0.3
+  mapping_window_size : 5
+  lr_factor : 1
+  bound: [[-5.5,5.9],[-6.7,5.4],[-4.7,5.3]]
+  # bound: [[-2.9,8.9],[-3.2,5.5],[-3.5,3.3]]
+
+  stage:
+    coarse:
+      color_decoders_lr: 0.0
+      semantic_decoders_lr: 0.0
+      coarse_lr: 0.0
+      middle_lr: 0.0
+      fine_lr: 0.0
+      color_lr: 0.0
+      semantic_lr: 0.0
+    middle:
+      color_decoders_lr: 0.0
+      semantic_decoders_lr: 0.0
+      coarse_lr: 0.0
+      middle_lr: 0.1
+      fine_lr: 0.0
+      color_lr: 0.0
+      semantic_lr: 0.0
+    fine:
+      color_decoders_lr: 0.0
+      semantic_decoders_lr: 0.0
+      coarse_lr: 0.0
+      middle_lr: 0.005
+      fine_lr: 0.005
+      color_lr: 0.0
+      semantic_lr : 0.0
+    color:
+      color_decoders_lr: 0.005
+      semantic_decoders_lr: 0.0
+      coarse_lr: 0.0
+      middle_lr: 0.005
+      fine_lr: 0.005
+      color_lr: 0.005
+      semantic_lr : 0.0
+    semantic:
+      color_decoders_lr: 0.0
+      semantic_decoders_lr: 0.005
+      coarse_lr: 0.0
+      middle_lr: 0.00
+      fine_lr: 0.00
+      color_lr: 0.00
+      semantic_lr : 0.005
+
+tracking :
+  BA_lr : 0.01
+
+clip :
+  clip_model_path: './pretrained/open_clip_pytorch_model.bin'
+  sam_model_path : './pretrained/sam_vit_b_01ec64.pth'
+  device : 'cuda:2'
+  query_text : 'door'
+  fre_semantic : 10
