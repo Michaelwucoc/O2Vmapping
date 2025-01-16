@@ -51,7 +51,7 @@ coming soon
 
 
 
-## 🙇‍Acknowlegement
+## 😊Acknowlegement
 
 - This work is accomplished based on other excellent works, and we extend our gratitude for their contributions.
 - [nice-slam](https://github.com/cvg/nice-slam)
