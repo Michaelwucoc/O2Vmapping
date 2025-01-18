@@ -11,10 +11,11 @@ Source code for [ECCV2024] O2V-Mapping: Online Open-Vocabulary Mapping with Neur
 
 
 
-<div style="text-align:center">
-  <img src="https://github.com/Fudan-MAGIC-Lab/O2Vmapping/blob/main/semantic_search.gif" alt="Demo for O2Vmapping" style="width:100%;">
-</div>
-
+<p align="center">
+  <a href="">
+    <img src="https://github.com/Fudan-MAGIC-Lab/O2Vmapping/blob/main/semantic_search.gif" alt="Demo for O2Vmapping" width="100%">
+  </a>
+</p>
 
 
 ## ⚙️Installation
