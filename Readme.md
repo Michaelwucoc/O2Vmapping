@@ -52,7 +52,7 @@ We recommend that you construct the dataset according to the official guidelines
    ├──traj.txt
    └──transforms.json
    	 ...
-   	 └──office1
+  └──office1
  ...
  ├──YOURDATA
 └──run.py
