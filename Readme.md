@@ -45,16 +45,16 @@ We recommend that you construct the dataset according to the official guidelines
 ```cmd
 ├──config
 ├──Datasets
- ├──Replica
-  ├──office0
-   ├──pose
-   ├──results
-   ├──traj.txt
-   └──transforms.json
-   	 ...
-  └──office1
- ...
- └──YOURDATA
+    ├──Replica
+    ├──office0
+        ├──pose
+        ├──results
+        ├──traj.txt
+        └──transforms.json
+   	    ...
+    └──office1
+    ...
+    └──YOURDATA
 └──run.py
 ...
 ```
