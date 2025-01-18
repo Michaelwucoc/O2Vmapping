@@ -37,11 +37,44 @@ Our project relies on [SAM](https://github.com/facebookresearch/segment-anything
 
 
 ## 📂Prepare Data
-coming soon
 
+### 1. Replica
+
+We recommend that you construct the dataset according to the official guidelines of the [Replica](https://github.com/facebookresearch/Replica-Dataset/tree/v1.0) dataset. The dataset should be organized as follows:
+
+```cmd
+├──	config
+├──	Datasets
+   	├──	Replica
+   		├──	office0
+   			├──	pose
+   			├──	results
+   			├──	traj.txt
+   			└── transforms.json
+   		...
+   		└── office1
+   	...
+   	├──	YOURDATA
+└──	run.py
+...
+```
+
+### 2. Scannet
+
+Coming soon …
+
+### 3. Your own dataset
+
+For the dataset you have collected yourselves, some additional processing is still required, and it will be gradually open-sourced in the future.
 
 ## 🏃Running
-coming soon
+After ensuring the above process is correct, you can proceed to run:
+
+```cmd
+python run.py ./config/office0_door.yaml
+```
+
+
 
 
 
