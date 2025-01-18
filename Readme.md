@@ -43,19 +43,19 @@ Our project relies on [SAM](https://github.com/facebookresearch/segment-anything
 We recommend that you construct the dataset according to the official guidelines of the [Replica](https://github.com/facebookresearch/Replica-Dataset/tree/v1.0) dataset. The dataset should be organized as follows:
 
 ```cmd
-├──	config
-├──	Datasets
-   	├──	Replica
-   		├──	office0
-   			├──	pose
-   			├──	results
-   			├──	traj.txt
-   			└── transforms.json
+├──config
+├──Datasets
+   	├──Replica
+   		├──office0
+   			├──pose
+   			├──results
+   			├──traj.txt
+   			└──transforms.json
    		...
-   		└── office1
+   		└──office1
    	...
-   	├──	YOURDATA
-└──	run.py
+   	├──YOURDATA
+└──run.py
 ...
 ```
 
