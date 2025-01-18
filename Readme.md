@@ -83,7 +83,7 @@ python run.py ./config/office0_door.yaml
 
 ## 😊Acknowlegement
 
-- This work is accomplished based on other excellent works, and we extend our gratitude for their contributions.
+This work is accomplished based on other excellent works, and we extend our gratitude for their contributions.
 - [nice-slam](https://github.com/cvg/nice-slam)
 - [lerf](https://github.com/kerrj/lerf)
 - [segment-anything](https://github.com/facebookresearch/segment-anything)
