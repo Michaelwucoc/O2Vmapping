@@ -5,12 +5,9 @@ Source code for [ECCV2024] O2V-Mapping: Online Open-Vocabulary Mapping with Neur
 
 <div align="center">
     <a href='https://arxiv.org/abs/2404.06836'><img src='https://img.shields.io/badge/arXiv-2404.06836-b31b1b.svg'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <a href='https://github.com/Fudan-MAGIC-Lab/O2Vmapping'><img src='https://img.shields.io/badge/Github-Code-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href='https://www.youtube.com/watch?v=zWirggX_hiA&t=5s'><img src='https://img.shields.io/badge/Youtube-Video-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='https://github.com/Fudan-MAGIC-Lab/O2Vmapping'><img src='https://img.shields.io/badge/Github-Code-blue'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href='https://www.youtube.com/watch?v=zWirggX_hiA&t=5s'><img src='https://img.shields.io/badge/Youtube-Video-red'></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
-
-
-
 <p align="center">
   <a href="">
     <img src="https://github.com/Fudan-MAGIC-Lab/O2Vmapping/blob/main/semantic_search.gif" alt="Demo for O2Vmapping" width="100%">
