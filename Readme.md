@@ -45,13 +45,13 @@ We recommend that you construct the dataset according to the official guidelines
 ├──config
 ├──Datasets
     ├──Replica
-    ├──office0
+      ├──office0
         ├──pose
         ├──results
         ├──traj.txt
         └──transforms.json
    	    ...
-    └──office1
+      └──office1
     ...
     └──YOURDATA
 └──run.py
@@ -60,11 +60,33 @@ We recommend that you construct the dataset according to the official guidelines
 
 ### 2. Scannet
 
-Coming soon …
+We recommend that you download the [ScanNet](https://github.com/ScanNet/ScanNet) dataset following the official guidelines. The dataset should be organized into files in the following format.
+
+```cmd
+├──config
+├──Datasets
+    ├──scannet
+      ├──scannet0707_00
+        ├──color
+        ├──depth
+        ├──intrinsic
+        └──pose
+   	    ...
+      └──scannet0000_00
+    ...
+    └──YOURDATA
+└──run.py
+...
+```
 
 ### 3. Your own dataset
 
-For the dataset you have collected yourselves, some additional processing is still required, and it will be gradually open-sourced in the future.
+For the dataset you have collected yourselves, some additional processing is still required. Please run the following to estimate the scene boundaries. This helps reduce unnecessary spatial overhead and ensures the correct scene boundaries are set.
+
+```cmd
+python bound.py ./config/YOURDATA.yaml --input_folder './YOURDATA/'
+```
+
 
 ## 🏃Running
 After ensuring the above process is correct, you can proceed to run:
