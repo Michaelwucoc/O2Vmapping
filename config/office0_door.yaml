@@ -1,4 +1,4 @@
-dataset : "ReplicaClip"
+dataset: "scannetClip"
 
 occupancy : True
 
@@ -12,18 +12,18 @@ cam :
   cy: 339.5
 
 
-semantic : 
+semantic:
   is_semantic : False
 
 scale : 1
 
-data : 
-  input_folder : './Datasets/Replica/office0'
-  output_folder : './output/Replica/office0'
+data:
+  input_folder: './Datasets/scene0106_00'
+  output_folder: './output/scannet/scene0106_00'
   dim : 3
 
 
-grid_len: 
+grid_len:
   coarse: 2
   middle: 0.32
   fine: 0.16
@@ -46,10 +46,10 @@ rendering:
   N_samples: 8
   N_surface: 16
   N_importance: 0
-  device: 'cuda:2'
+  device: 'cuda:0'
 
 mapping :
-  device : 'cuda:2'
+  device: 'cuda:0'
   BA_cam_lr : 0.01
   ckpt_freq : 500
   pixels : 1000
@@ -111,6 +111,6 @@ tracking :
 clip :
   clip_model_path: './pretrained/open_clip_pytorch_model.bin'
   sam_model_path : './pretrained/sam_vit_b_01ec64.pth'
-  device : 'cuda:2'
+  device: 'cuda:0'
   query_text : 'door'
   fre_semantic : 10
